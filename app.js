@@ -162,9 +162,13 @@ async function loadWeather(lat, lon, cityLabel) {
 function renderAll(data, cityLabel) {
   renderCurrent(data, cityLabel);
   renderForecast(data);
-  renderChart(data);
+
   hideSpinner();
   dashboard.classList.remove('hidden');
+
+  setTimeout(() => {
+    renderChart(data);
+  }, 50);
 }
 
 // ══════════════════════════════════════════════════════════
