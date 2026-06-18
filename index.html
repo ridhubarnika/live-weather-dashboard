@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- SEARCH BAR (Requirement 6) -->
+
   <header class="top-bar">
     <div class="brand">⛅ WeatherNow</div>
     <div class="search-box">
@@ -17,16 +17,14 @@
     </div>
   </header>
 
-  <!-- LOADING SPINNER (Requirement 1) -->
   <div id="spinner" class="spinner hidden">
     <div class="spin-circle"></div>
     <p>Detecting your location…</p>
   </div>
 
-  <!-- MAIN DASHBOARD -->
+
   <main id="dashboard" class="hidden">
 
-    <!-- CURRENT WEATHER (Requirement 2 & 3) -->
     <section id="currentWeather" class="current-card">
       <div class="current-left">
         <div id="weatherIcon" class="weather-icon">🌤️</div>
@@ -43,18 +41,18 @@
       </div>
     </section>
 
-    <!-- 24-HOUR TEMPERATURE CHART (Requirement 5) -->
+
     <section class="chart-section">
       <h2>24-Hour Temperature</h2>
       <canvas id="tempChart"></canvas>
     </section>
 
-    <!-- 7-DAY FORECAST GRID (Requirement 4) -->
+
     <section class="forecast-section">
       <h2>7-Day Forecast</h2>
       <div id="forecastGrid" class="forecast-grid"></div>
 
-      <!-- EXPANDED DAY DETAIL (CSS Transition) -->
+ 
       <div id="dayDetail" class="day-detail hidden">
         <button id="closeDetail">✕ Close</button>
         <h3 id="detailDate">--</h3>
@@ -69,7 +67,7 @@
 
   </main>
 
-  <!-- ERROR MESSAGE -->
+
   <div id="errorMsg" class="error hidden"></div>
 
   <script src="app.js"></script>
